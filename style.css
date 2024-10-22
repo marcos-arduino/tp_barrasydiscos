@@ -68,4 +68,16 @@ h1 {margin-top: 2.5rem;}
   margin: calc(-0.5 * var(--bs-modal-header-padding-y)) calc(-0.5 * var(--bs-modal-header-padding-x)) calc(-0.5 * var(--bs-modal-header-padding-y)) auto;
 }
 
-
+#cart-items {
+  list-style: none;
+  li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 1rem;
+    padding-right: 5rem;
+    margin: 1rem;
+  }
+}

@@ -22,5 +22,17 @@ esto se debe a que se necesita un 10% mas de hierro por la perdida de material e
 
 -->
 
+<?php
+function conexion() {
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "pech_barras";
 
+    $conn = mysqli_connect($servername, $username, $password, $dbname);
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+    return $conn;
+}
 
